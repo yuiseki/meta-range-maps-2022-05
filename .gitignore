@@ -1,0 +1,11 @@
+# The data itself lives on the Hugging Face Hub, not in git:
+#   https://huggingface.co/datasets/yuiseki/meta-range-maps-2022-05
+# data/README.md, data/LICENSE, data/provenance.yaml and data/manifest.json are
+# tracked: they are the card, its notices and the record of every file.
+data/movement-range-maps/
+data/work/
+data/*.log
+
+__pycache__/
+*.pyc
+.venv/

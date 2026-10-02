@@ -1,0 +1,33 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+
+Everything under this directory comes from Movement Range Maps, published
+by AI for Good at Meta (formerly Data for Good at Meta) on the Humanitarian
+Data Exchange:
+
+  https://data.humdata.org/dataset/movement-range-maps
+
+HDX lists the dataset's licence as Creative Commons Attribution International
+(CC BY, license_id cc-by); it is used here as CC BY 4.0.
+
+Credit:
+
+  Data for Good at Meta, Movement Range Maps, Humanitarian Data Exchange
+  (https://data.humdata.org/dataset/movement-range-maps)
+
+The files under movement-range-maps/original/ are Meta's own, byte for
+byte; manifest.json records each one's size, sha256 and dates.
+
+The Parquet under movement-range-maps/ was made from them:
+
+  - the tab separated file inside each zip was read and split into one table
+    a year (2020, 2021, 2022)
+  - ds became a date and the two measures doubles; the other columns are the
+    text of the files
+  - a source_file column was added, naming the file each row came from
+  - rows were sorted by country, region and day
+  - values were not changed
+
+The code that fetches, checks and converts is MIT, in the repository this
+dataset was built from (https://github.com/yuiseki/meta-range-maps-2022-05), and does
+not apply here.

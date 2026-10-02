@@ -1,0 +1,82 @@
+{
+ "datasets": {
+  "movement-range-maps": {
+   "page": "https://data.humdata.org/dataset/movement-range-maps",
+   "title": "Movement Range Maps",
+   "license_id": "cc-by",
+   "license_title": "Creative Commons Attribution International (CC BY)",
+   "dataset_date": "[2020-03-01T00:00:00 TO 2022-05-24T23:59:59]",
+   "metadata_modified": "2025-11-19T10:29:46.280529",
+   "sources": [
+    {
+     "resource_id": "435ed157-6f7a-4e8f-a63a-2aa177b9bd05",
+     "name": "How To Understand This Data.txt",
+     "file": "how-to-understand-this-data.txt",
+     "url": "https://data.humdata.org/dataset/c3429f0e-651b-4788-bb2f-4adbf222c90e/resource/435ed157-6f7a-4e8f-a63a-2aa177b9bd05/download/readme.txt",
+     "format": "TXT",
+     "size": 961,
+     "last_modified": "2022-05-24T04:02:33.007599",
+     "http_last_modified": null,
+     "bytes": 961,
+     "sha256": "df9a3a66366728584a36496e0aec9fd7d9e09d2a38aa17cbd3cba9a3c5207587",
+     "md5_checked": true,
+     "fetched": "2026-09-29T15:40:48+09:00",
+     "on_hdx": true
+    },
+    {
+     "resource_id": "55a51014-0d27-49ae-bf92-c82a570c2c6c",
+     "name": "movement-range-data-2022-05-22.zip",
+     "file": "movement-range-data-2022-05-22.zip",
+     "url": "https://data.humdata.org/dataset/c3429f0e-651b-4788-bb2f-4adbf222c90e/resource/55a51014-0d27-49ae-bf92-c82a570c2c6c/download/movement-range-data-2022-05-22.zip",
+     "format": "zip",
+     "size": 73054975,
+     "last_modified": "2022-05-24T04:01:50.982982",
+     "http_last_modified": null,
+     "bytes": 73054975,
+     "sha256": "7d48f63fcdf9de1a8104a408357a68eda40e633eb9a4a252eda95f501ed58173",
+     "md5_checked": true,
+     "fetched": "2026-09-29T15:40:48+09:00",
+     "on_hdx": true
+    },
+    {
+     "resource_id": "3d77ce5c-ab6d-4864-b8a2-c8bafffac4f3",
+     "name": "movement-range-data-2020-03-01--2020-12-31.zip",
+     "file": "movement-range-data-2020-03-01--2020-12-31.zip",
+     "url": "https://data.humdata.org/dataset/c3429f0e-651b-4788-bb2f-4adbf222c90e/resource/3d77ce5c-ab6d-4864-b8a2-c8bafffac4f3/download/movement-range-data-2020-03-01-2020-12-31.zip",
+     "format": "TXT",
+     "size": 56561599,
+     "last_modified": "2021-07-27T19:25:52.653823",
+     "http_last_modified": "Tue, 27 Jul 2021 19:25:56 GMT",
+     "bytes": 56560052,
+     "sha256": "b9dfe0899c06eeee5d25e26264abb142cc0fd00db8047558e510a49c89c0ba2e",
+     "md5_checked": true,
+     "fetched": "2026-09-29T15:42:48+09:00",
+     "on_hdx": true
+    }
+   ],
+   "source_rows": 12179540,
+   "polygon_name_na_ids": 898,
+   "outputs": {
+    "movement_range_2020.parquet": {
+     "rows": 5229342,
+     "bytes": 38689384,
+     "ds_min": "2020-03-01",
+     "ds_max": "2020-12-31"
+    },
+    "movement_range_2021.parquet": {
+     "rows": 5287242,
+     "bytes": 38271294,
+     "ds_min": "2021-01-01",
+     "ds_max": "2021-12-31"
+    },
+    "movement_range_2022.parquet": {
+     "rows": 1662956,
+     "bytes": 12137008,
+     "ds_min": "2022-01-01",
+     "ds_max": "2022-05-22"
+    }
+   },
+   "built": "2026-10-02T13:30:56+09:00"
+  }
+ }
+}

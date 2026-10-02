@@ -1,0 +1,41 @@
+# Where this data comes from and what was done to it.
+
+source:
+  name: Movement Range Maps
+  publisher: AI for Good at Meta (formerly Data for Good at Meta)
+  page: https://data.humdata.org/dataset/movement-range-maps
+  licence:
+    applied: CC BY (HDX license_id cc-by), used as CC BY 4.0
+    attribution_required: true
+    share_alike: false
+    credit: Data for Good at Meta, Movement Range Maps, Humanitarian Data Exchange (https://data.humdata.org/dataset/movement-range-maps)
+
+snapshot:
+  vintage: 2022-05
+  note: |
+    The dataset ended with data for 2022-05-22. HDX's files were last changed
+    on 2022-05-24 (the 2021-2022 zip and the note) and 2021-07-27 (the 2020
+    zip); the month in the name is the later. The files were fetched on
+    2026-09-29 by study-geoai-algo-py's mirror_hdx_meta.py and adopted here
+    with 01_download.py --from after checking every sha256.
+  api_size_mismatch: |
+    HDX's API lists the 2020 zip as 56,561,599 bytes; the file served is
+    56,560,052 bytes, matches the S3 ETag and opens as a sound zip.
+
+contents:
+  rows: {2020: 5229342, 2021: 5287242, 2022: 1662956}
+  days: 2020-03-01 to 2022-05-22
+  regions: 19142
+  countries: 153
+  polygon_source: {GADM: 10426136, FIPS: 1753404}
+  japan: {rows: 384539, regions: 695}
+  regions_named_NA: 898
+
+modifications:
+  original: none. Meta's zips and note, byte for byte.
+  parquet:
+    - the file inside each zip read and split into one table a year
+    - ds as a date, the two measures as doubles, the rest text
+    - a source_file column added, naming the file each row came from
+    - sorted by country, polygon_id, ds
+    - written without bloom filters
