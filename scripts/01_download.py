@@ -7,7 +7,7 @@ since 2022-05-24. A run fetches what HDX lists and keeps what is here; the
 record of every file, with its sha256 and HDX's dates, is data/manifest.json.
 
     uv run python scripts/01_download.py
-    uv run python scripts/01_download.py --from /www/html/static/hdx-meta
+    uv run python scripts/01_download.py --from /sata_hdd_24tb/www/html/static/hdx-meta
 
 --from adopts the files of an earlier mirror (study-geoai-algo-py's
 mirror_hdx_meta.py keeps one on z.yuiseki.net): each file is copied only if

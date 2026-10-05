@@ -45,7 +45,7 @@ from typing import IO
 API = "https://data.humdata.org/api/3/action/package_show?id={}"
 PAGE = "https://data.humdata.org/dataset/{}"
 PUBLIC_PREFIX = "https://z.yuiseki.net/static/hdx-meta/"
-DEST = Path("/www/html/static/hdx-meta")
+DEST = Path("/sata_hdd_24tb/www/html/static/hdx-meta")
 SCRATCH = Path("/tmp/study-geoai-mirror-hdx-meta")
 UA = "meta-range-maps-2022-05/1 (+https://github.com/yuiseki/meta-range-maps-2022-05)"
 # Cloudflare in front of z.yuiseki.net does not cache files above 512 MB and
